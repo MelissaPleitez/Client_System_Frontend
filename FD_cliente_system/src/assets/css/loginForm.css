@@ -1,0 +1,119 @@
+/* login form*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .login-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .login-subdiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .image-side {
+    background-color: #dfeee9;
+    color: #345b47;
+    text-align: center;
+  }
+  
+  .image-side img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-text {
+    margin-top: 20px;
+  }
+  
+  .image-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .image-text p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-actions button {
+    background-color: #345b47;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-actions button:disabled {
+    background-color: #ccc;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .google-login {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-account {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .create-account a {
+    color: #345b47;
+    text-decoration: none;
+  }
