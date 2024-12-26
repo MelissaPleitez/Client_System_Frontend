@@ -2,13 +2,13 @@
 .login-container {
     display: flex;
     flex-direction: row;
-    width: 90%;  /* Reducido para que quede más centrado en pantallas grandes */
+    width: 90%;  
     max-width: 1200px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 0 auto; /* Centrar el contenedor */
+    margin: 0 auto; 
   }
   
   /* Sub containers */
@@ -18,20 +18,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;  /* Padding reducido */
+    padding: 20px;  
   }
   
   .image-side {
     background-color: #dfeee9;
     text-align: center;
-    width: 100%; /* Asegurarse de que ocupe el ancho completo */
+    width: 100%; 
   }
   
   .image-wrapper {
     position: relative;
-    width: 100%;  /* Asegura que la imagen ocupe todo el contenedor */
-    padding-top: 56.25%;  /* Relación de aspecto 16:9 */
-    overflow: hidden;  /* Oculta cualquier exceso de imagen */
+    width: 100%;  
+    padding-top: 56.25%;  
+    overflow: hidden;  
   }
   
   .responsive-img {
@@ -72,10 +72,10 @@
   }
   
   /* Responsive */
-  @media (max-width: 1024px) {
+  @media (max-width: 772px) {
     .login-container {
       flex-direction: column;
-      width: 100%; /* Ensuring that the container takes full width on smaller screens */
+      width: 100%; 
     }
   
     .login-subdiv {
@@ -89,11 +89,19 @@
     }
   
     .image-text h2 {
-      font-size: 20px; /* Hacer el título más pequeño */
+      font-size: 20px; 
     }
   
     .image-text p {
-      font-size: 12px; /* Reducir el tamaño del texto */
+      font-size: 12px; 
+    }
+
+    .image-wrapper {
+        display: none;
+    }
+
+    .image-text {
+        margin: 20px;
     }
   }
   
