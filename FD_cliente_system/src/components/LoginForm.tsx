@@ -57,7 +57,7 @@ function LoginForm() {
       autocomplete="current-password"
     />
     <div className="form-actions">
-      <button type="submit" disabled={!userStore.email || !userStore.password}>
+      <button type="submit">
         Sign in
       </button>
     </div>

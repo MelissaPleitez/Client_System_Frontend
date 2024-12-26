@@ -1,41 +1,55 @@
 /* Main container */
 .login-container {
-    display: flex; 
-    flex-direction: row; 
-    width: 80%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;  /* Reducido para que quede más centrado en pantallas grandes */
     max-width: 1200px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin: 0 auto; /* Centrar el contenedor */
   }
   
-  /* Sub containers*/
+  /* Sub containers */
   .login-subdiv {
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 20px;  /* Padding reducido */
   }
   
   .image-side {
     background-color: #dfeee9;
     text-align: center;
+    width: 100%; /* Asegurarse de que ocupe el ancho completo */
   }
   
-  .image-side img {
-    max-width: 80%;
-    height: auto;
+  .image-wrapper {
+    position: relative;
+    width: 100%;  /* Asegura que la imagen ocupe todo el contenedor */
+    padding-top: 56.25%;  /* Relación de aspecto 16:9 */
+    overflow: hidden;  /* Oculta cualquier exceso de imagen */
   }
   
+  .responsive-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Hace que la imagen mantenga su proporción sin distorsionarse */
+  }
+  
+  /* Ajustes de texto */
   .image-text {
     margin-top: 20px;
   }
   
   .image-text h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
     color: #345b47;
   }
@@ -45,7 +59,7 @@
     color: #555;
   }
   
-  /* Cols form */
+  /* Form container */
   .form-side {
     background-color: #ffffff;
     color: #333;
@@ -58,13 +72,47 @@
   }
   
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .login-container {
-      flex-direction: column; 
+      flex-direction: column;
+      width: 100%; /* Ensuring that the container takes full width on smaller screens */
     }
   
     .login-subdiv {
       flex: none;
       width: 100%;
+      padding: 10px;
+    }
+  
+    .image-side {
+      text-align: center;
+    }
+  
+    .image-text h2 {
+      font-size: 20px; /* Hacer el título más pequeño */
+    }
+  
+    .image-text p {
+      font-size: 12px; /* Reducir el tamaño del texto */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-subdiv {
+      flex: none;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .image-text h2 {
+      font-size: 18px; /* Reducir aún más el tamaño del título */
+    }
+  
+    .image-text p {
+      font-size: 12px; /* Reducir el tamaño del texto */
     }
   }
