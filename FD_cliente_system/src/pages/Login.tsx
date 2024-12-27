@@ -9,7 +9,8 @@ const Login: React.FC = () => {
 
   return (
     <>
-      <div className="login-container">
+    <div className='mainLogin'>
+    <div className="login-container">
       <div className="login-subdiv image-side">
       <div className="image-wrapper">
             <img src={imagen} alt="illustration" className="responsive-img" />
@@ -22,6 +23,7 @@ const Login: React.FC = () => {
       <div className="login-subdiv form-side">
         <LoginForm />
       </div>
+    </div>
     </div>
     </>
   )
