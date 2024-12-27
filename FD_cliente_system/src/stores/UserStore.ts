@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx";
-
+import Swal from "sweetalert2"; 
 
 
 class UserStore {
@@ -44,9 +44,19 @@ class UserStore {
           this.setError("");
         } else {
           this.setError("Invalid credentials. Please try again.");
+          Swal.fire({
+            icon: 'error',
+            title: 'Authentication Failed',
+            text: 'Invalid credentials. Please check your email and password.',
+          })
         }
       } catch (error) {
         this.setError("An error occurred. Please try again.");
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'An error occurred. Please try again later.',
+          });
       }
     }
   }

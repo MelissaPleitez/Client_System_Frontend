@@ -1,3 +1,5 @@
+import { Children } from "react";
+
 export interface LoginPageProps {
     type: string;
     placeholder: string;
@@ -8,4 +10,8 @@ export interface LoginPageProps {
 
 export interface LoginErroMessage {
     error: string;
+}
+
+export interface ProtectedProps {
+    children: JSX.Element
 }

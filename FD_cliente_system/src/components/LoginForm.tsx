@@ -58,7 +58,7 @@ function LoginForm() {
         setErrors(userStore.error);
       }, [userStore.error]); 
 
-    const isFormValid = !emailError && !passwordError && userStore.email && userStore.password;
+    const isFormValid = !emailError && !passwordError;
 
   return (
     <form className="login-form" onSubmit={handleLogin}>
@@ -70,7 +70,7 @@ function LoginForm() {
       icon={"User"}
       autocomplete="username"
     />
-       <span className="error-text">{emailError}</span>
+       <ErrorMessage error={emailError} />
     <LoginField
       type="password"
       placeholder="Password"
@@ -78,13 +78,12 @@ function LoginForm() {
       icon={"User"}
       autocomplete="current-password"
     />
-    <span className="error-text">{passwordError}</span>
+    <ErrorMessage error={passwordError} />
     <div className="form-actions">
       <button type="submit" disabled={!isFormValid}>
         Sign in
       </button>
     </div>
-    <ErrorMessage error={error} />
     <div className="social-login">
     </div>
     <p className="create-account">

@@ -1,0 +1,79 @@
+
+  /* Estilos del contenedor principal */
+  .table_main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título principal */
+  .main_title {
+    font-size: 2.5rem;
+    color: #345b47;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos de la tabla */
+  .main_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main_table th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .main_table th {
+    background-color: #345b47;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .main_table td {
+    background-color: white;
+    color: #555;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Efecto de hover en las filas */
+  .main_table tr:hover {
+    background-color: #FF96FD;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo de las celdas al hacer hover */
+  .main_table td:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilo de la última fila */
+  .main_table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Estilos de responsividad */
+  @media (max-width: 768px) {
+    .main_table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    
+    .main_table th, td {
+      padding: 8px;
+    }
+  
+    .main_table h1 {
+      font-size: 2rem;
+    }
+  }
+  

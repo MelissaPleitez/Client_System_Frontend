@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import { clientStore } from "../stores/ClientStore";
+import '../assets/css/mainPage.css';
 
 const MainPage: React.FC = observer(() => {
   useEffect(() => {
@@ -8,9 +9,9 @@ const MainPage: React.FC = observer(() => {
   }, []);
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Clients</h1>
-      <table cellPadding="10">
+    <div className="table_main_container" style={{ padding: "20px" }}>
+      <h1 className="main_title">Clients</h1>
+      <table className="main_table" cellPadding="10">
         <thead>
           <tr>
             <th>Name</th>
