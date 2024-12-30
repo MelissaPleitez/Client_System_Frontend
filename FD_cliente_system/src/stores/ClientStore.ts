@@ -9,7 +9,7 @@ class ClientStore {
 
   async fetchClients() {
     try {
-      const response = await fetch("http://localhost:5000/api/clients");
+      const response = await fetch("https://localhost:5001/api/clients");
       const data = await response.json();
       
       runInAction(()=>{
