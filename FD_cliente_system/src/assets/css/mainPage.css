@@ -43,8 +43,10 @@
 }
 
 .main_table tr:hover {
-  background-color: #ff96fd;
-  transition: background-color 0.3s ease;
+  background-color: #f3cbf2;  /* Color de fondo más suave */
+  color: #333;  /* Color de texto oscuro */
+  transform: scale(1.02);  /* Efecto de escalado */
+  transition: background-color 0.3s, transform 0.3s;  /* Transición suave */
 }
 
 .main_table tr:last-child td {
@@ -54,39 +56,52 @@
 
   /* navbar */
 
-  .navbar {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #345b47;
-    padding: 10px 20px;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar_logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar_links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar_links li {
-    display: inline;
-  }
-  
-  .navbar_links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .navbar_links a:hover {
-    color: #ff96fd;
-  }
+ /* navbar */
+.navbar {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #345b47;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar_links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar_links li {
+  display: inline;
+}
+
+.navbar_links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar_links a:hover {
+  color: #e7e2e7;  /* Cambio de color al pasar el ratón */
+  transform: scale(1.1);  /* Aumentar el tamaño al pasar el ratón */
+}
+
+/* Estilo para el icono entre Table y LogOut */
+.navbar_icon {
+  margin: 0 8px;  /* Ajuste del espaciado entre el texto y el icono */
+  width: 24px;    /* Tamaño del icono */
+  height: 24px;   /* Tamaño del icono */
+  vertical-align: middle; /* Alineación vertical */
+  opacity: 0.6;  /* Aquí ajustas la opacidad (0 es completamente transparente, 1 es completamente opaco) */
+}
