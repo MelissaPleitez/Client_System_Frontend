@@ -1,5 +1,5 @@
 # Frontend - React Application with Vite, MobX, and TypeScript
-##Setup Instructions
+## Setup Instructions
 
 To set up and run the frontend application, follow the steps below:
 
@@ -24,9 +24,9 @@ To set up and run the frontend application, follow the steps below:
   VITE v4.x.x  ready in xxx ms
   Local: http://localhost:xxxx
 
-#Assumptions and Notes
+# Assumptions and Notes
 
-##Application Overview:
+## Application Overview:
 
 This project is a frontend React application that utilizes Vite for bundling, TypeScript for type safety, and MobX for state management. The app interacts with an API (presumably running on the backend) for user authentication and fetching client data.
 
@@ -44,55 +44,35 @@ The application has two main views: the Login page and the Main page. The Login 
 ## Folder Structure:
 The project is organized as follows:
 
-src/
-│
-├── components/
-│   ├── ErrorMessage.tsx       # Error message display component
-│   ├── LoginField.tsx         # Custom input field component for login
-│   ├── LoginForm.tsx          # Login form component
-│   ├── Navbar.tsx             # Navbar component
-│   └── Table.tsx              # Table component for displaying client data
-│
-├── interfaces/
-│   └── LoginPageProps.ts      # Type definitions for the Login page props
-│
-├── pages/
-│   ├── Login.tsx              # Login page component
-│   └── MainPage.tsx           # Main page component
-│
-├── protected/
-│   └── ProtectedRoute.tsx     # Component for protecting routes based on authentication
-│
-└── stores/
-    ├── ClientStore.tsx        # MobX store for managing client data
-    └── UserStore.tsx          # MobX store for user authentication
+![image](https://github.com/user-attachments/assets/a0cefe77-8609-4a95-b2d4-6f8b3c8186cd)
 
-#Main Files Explanation
+
+# Main Files Explanation
 Here are the important files that drive the core functionality of the application:
 
-##UserStore.tsx
+## UserStore.tsx
 This MobX store manages user authentication state, including the email, password, error messages, and authentication status. It also contains a login() method that interacts with the backend to authenticate the user.
 
-##Key features:
+## Key features:
 
 - Stores user credentials (email and password)
 - Tracks authentication status (isAuthenticated)
 - Handles login requests to the backend API
 - Displays error messages using SweetAlert2 if authentication fails.
 
-##ClientStore.tsx
+## ClientStore.tsx
 This MobX store handles the fetching and managing of client data. It stores client details like name, nationality, occupation, and email in an array, and also manages a loading state (isLoading) and a dark mode toggle.
 
-##Key features:
+## Key features:
 
 - Fetches client data from the backend API (/api/clients)
 - Manages loading state while fetching data
 - Toggles dark mode setting for the UI
   
-##ProtectedRoute.tsx
+## ProtectedRoute.tsx
 This component checks if the user is authenticated. If not, it redirects them to the login page. This is used to protect certain routes from unauthorized access.
 
-##Packages Used
+## Packages Used
 - react-router-dom: Used for routing and navigation within the app.
 - react-sweetalert2: Used to show pop-up alerts for error handling (authentication failures).
 - mobx-react: Provides React bindings for MobX to handle state management.
