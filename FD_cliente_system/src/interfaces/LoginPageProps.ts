@@ -3,7 +3,6 @@ import { Children } from "react";
 export interface LoginPageProps {
     type: string;
     placeholder: string;
-    icon: string;
     onChange: any;
     autocomplete: any;
 }

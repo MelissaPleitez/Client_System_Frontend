@@ -1,7 +1,7 @@
 import { LoginPageProps } from "../interfaces/LoginPageProps";
 
 
-const LoginField: React.FC<LoginPageProps> = ({ type , placeholder, icon, onChange, autocomplete}) => {
+const LoginField: React.FC<LoginPageProps> = ({ type , placeholder, onChange, autocomplete}) => {
 
   return (
     <div>

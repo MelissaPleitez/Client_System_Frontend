@@ -1,4 +1,4 @@
-/* Estilos del contenedor principal */
+
 .table_main_container {
   font-family: 'Arial', sans-serif;
   max-width: 1200px;
@@ -9,7 +9,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Título principal */
+
 .main_title {
   font-size: 2.5rem;
   color: #345b47;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-/* Tabla */
+
 .main_table {
   width: 100%;
   border-collapse: collapse;
@@ -43,18 +43,66 @@
 }
 
 .main_table tr:hover {
-  background-color: #f3cbf2;  /* Color de fondo más suave */
-  color: #333;  /* Color de texto oscuro */
-  transform: scale(1.02);  /* Efecto de escalado */
-  transition: background-color 0.3s, transform 0.3s;  /* Transición suave */
+  background-color: #f3cbf2; 
+  color: #333;  
+  transform: scale(1.02);  
+  transition: background-color 0.3s, transform 0.3s;  
 }
 
 .main_table tr:last-child td {
   border-bottom: none;
 }
-  
 
-  /* navbar */
+#main_body {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main_table {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .main_table th, .main_table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .main_table th {
+    font-size: 1rem;
+  }
+
+  #main_body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_table {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .main_table th, .main_table td {
+    padding: 6px;
+    font-size: 0.7rem;
+}
+
+.main_table th {
+  font-size: 10px;
+}
+
+  .main_title {
+    font-size: 1.8rem;
+  }
+
+ 
+  .table_main_container {
+    overflow-x: auto;
+  }
+
+}
+
 
  /* navbar */
 .navbar {
@@ -93,15 +141,34 @@
 }
 
 .navbar_links a:hover {
-  color: #e7e2e7;  /* Cambio de color al pasar el ratón */
-  transform: scale(1.1);  /* Aumentar el tamaño al pasar el ratón */
+  color: #e7e2e7;  
+  transform: scale(1.1);  
 }
 
-/* Estilo para el icono entre Table y LogOut */
+
 .navbar_icon {
-  margin: 0 8px;  /* Ajuste del espaciado entre el texto y el icono */
-  width: 24px;    /* Tamaño del icono */
-  height: 24px;   /* Tamaño del icono */
-  vertical-align: middle; /* Alineación vertical */
-  opacity: 0.6;  /* Aquí ajustas la opacidad (0 es completamente transparente, 1 es completamente opaco) */
+  margin: 0 8px;  
+  width: 24px;    
+  height: 24px;
+  vertical-align: middle; 
+  opacity: 0.8;  
+}
+
+/* Dark mode */
+.dark-mode body {
+  background-color: #121212; 
+  color: #FFFFFF; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.dark-mode .main_table {
+  background-color: #2c4739; 
+  color: #f3cbf2; 
+  font-weight:600;
+}
+
+.dark-mode .main_table th,
+.dark-mode .main_table td {
+  border-color: #444444;  
 }

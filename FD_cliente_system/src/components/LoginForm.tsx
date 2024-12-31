@@ -67,7 +67,6 @@ function LoginForm() {
       type="email"
       placeholder="Email"
       onChange={handleEmail}
-      icon={"User"}
       autocomplete="username"
     />
        <ErrorMessage error={emailError} />
@@ -75,7 +74,6 @@ function LoginForm() {
       type="password"
       placeholder="Password"
       onChange={handlePassword}
-      icon={"User"}
       autocomplete="current-password"
     />
     <ErrorMessage error={passwordError} />

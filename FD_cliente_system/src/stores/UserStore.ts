@@ -35,9 +35,6 @@ class UserStore {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: this.email, password: this.password }),
         });
-
-        console.log("Response Status:", response.status);
-        console.log("Response OK:", response);
   
         if (response.ok) {
           this.setAuthenticated(true);
