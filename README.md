@@ -28,7 +28,7 @@ To set up and run the frontend application, follow the steps below:
 
 ## Application Overview:
 
-This project is a frontend React application that utilizes Vite for bundling, TypeScript for type safety, and MobX for state management. The app interacts with an API (presumably running on the backend) for user authentication and fetching client data.
+This project is a frontend React application that utilizes Vite for bundling, TypeScript for type safety, and MobX for state management. The app interacts with an API for user authentication and fetching client data.
 
 ## Technologies Used:
 - React.js (for building the user interface)
