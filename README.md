@@ -3,7 +3,7 @@
 
 To set up and run the frontend application, follow the steps below:
 
-## 1- Versions: first make sure to have the followings version:
+### 1- Versions: first make sure to have the followings version:
 - Node: v20.12.2
 - Npm: 10.5.0
 
